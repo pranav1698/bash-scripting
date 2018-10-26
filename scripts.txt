@@ -1,0 +1,34 @@
+Anything thta can be executed in the command line can be put into a shell
+script.
+*Great for automating tasks*
+
+If a script does not uses a shebang the commands are executed 
+uding your current shell-(Different shell use different syntax)
+
+Variables: 
+    VARIABLE_NAME="Value"
+
+Tests: 
+    [ condition-to-test-for ]
+
+    [ -e /etc/passwd ]
+
+
+** if [ condition-to-test ]
+    then 
+        command 1
+        command 2
+        command N   
+    fi
+
+*** for VARIABLE_NAME in item1 itemN
+    do 
+        command
+    done
+    
+* Positional Parameters:
+    script.sh 
+        $0: "script.sh"
+
+* Accepting USER Input (STDIN)
+    read command accepts STDIN
