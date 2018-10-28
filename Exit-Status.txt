@@ -6,7 +6,7 @@ Other than 0 = failure(error condition)
 ** Used for error checking 
  Use man or info command
 
- $? returns the exit status of the previously executed command
+ $? is a special variable that contains exit status of the previously executed command
 
 
  * && or ||

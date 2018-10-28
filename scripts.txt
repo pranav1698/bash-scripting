@@ -32,3 +32,17 @@ Tests:
 
 * Accepting USER Input (STDIN)
     read command accepts STDIN
+
+* Seperate commands with a semicolon to ensure to ensure they all 
+    get executed 
+    The semicolon does not ensure the exit status
+
+* All shell scripts exit with a exit status:
+    Default value is the exit status of the last command
+    Or we can explicitly define the return status;
+        exit 0
+        exit 255 at the end of the shell script
+    The exit command can be executed at any point in the script,
+    When the exit command is executed the shell script stops running
+
+** $$ is the pit command number of times the shell is executed 

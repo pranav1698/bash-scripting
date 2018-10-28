@@ -1,0 +1,33 @@
+* function function-name () {
+    command
+}
+
+    function-name () {
+        command
+    }
+
+
+Positional Parameters:
+    * the first parameter is stored in $1
+    * The second parameter is stored in $2
+    * $@ contains all the Parameters
+    * Just like shell scripts;
+        * $0 = the script itself not function name
+
+** By default, variables are global
+** Variables that are declared inside of a function are available outside of the function
+    Only after the function is called
+
+Local Variables
+    * Can only be accessed inside a function 
+    * Created using a local keyword
+        local LOCAL_VAR = 1
+    * Best practise is to keep variables local in a function
+
+Exit Status
+* Just like shell scripts functions aksi have an exit Status
+* Defined explicitly 
+     return <RETURN_CODE>
+* Implicitly
+    exit status of the last command executed in the function
+
