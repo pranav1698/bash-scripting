@@ -1,0 +1,45 @@
+A character or string are used for pattern matching 
+Globbing expands the wildcard pattern into a list of files and/or 
+directories.(paths)
+
+For e.g;
+** *-matches zero or more characters
+    *.txt
+    a*
+    a*.txt
+
+** ? - matches exactly one character
+    ?.txt
+    a?
+    a?.txt
+
+** []- Acharacter class
+    Matches any of rhe characters included between the brackets.
+    Matches exactly one character
+    [aieou]-one characterfile name starting with a vowel
+    ca[nt]*
+
+** [!]- Matches any of the characters NOT included between the brackets.
+        Matches exactly one character
+    [!aieou]*
+        baseball
+        cricket
+
+** Ranges: Use two characters seperated with a hyphen to create a range in a 
+        character class
+    [a-g]*- Matches all file name that start with a,b,c,d,e,f or g 
+    [3-6]* - Matches all files that start with 3,4,5 or 6
+
+** Named Character Classes:
+    [[:alpha:]]- matches alphabetic characters; case insensitive
+    [[:alnum:]]- matches alphanumeric characters
+    [[:digit:]]- matches digit (0 - 9)
+    [[:lower:]] - matches lowercase
+    [[:space:]] - Matches blankspaces
+    [[:upper:]] - matches uppercase 
+
+** Matching Wildcard Patterns
+    \-escape character . To match a wild card charcter.
+    Match all files that end with a question mark 
+    *\? 
+        done?
