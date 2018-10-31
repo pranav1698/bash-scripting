@@ -1,0 +1,45 @@
+** The process of finding errors or fixing unexpected errors
+    is called debugging
+
+** -x = Print commands as they execute
+    This is called x-trace or print debugging
+    * Used after substituitions and expansions
+    * To use this debugging behavior in shell scripts
+        Start with #!/bin/bash -x
+        Or end with set -x- (or just before the command where you run the script)
+    
+    set +x to stop debugging
+
+** -e = Exit on error
+    to pinpoint where the problem is
+    Can be combined with other options:
+    #!/bin/bash -ex || -xe || -x-e || -e-x
+
+** -v = Prints shell input lines as they are read
+    Can be combined with other options
+
+** Manual Debugging 
+    Creating own debugging code 
+    Using a special variable like DEBUG 
+        * DEBUG=true
+        * DEBUG=false
+
+    Use a echo as value of DEBUG
+
+    Creating a debug function like:
+        debug() {
+            echo "Executing $@"
+            $@
+        }
+
+        debug ls
+
+** Syntax highlighting 
+    use text editors
+
+** PS4
+    Control what is displayed before a line when using the "+x" option.
+    The default value is +
+    Bash Variables 
+        BASH_SOURCE, LINENO etc 
+        

@@ -1,0 +1,17 @@
+** while [ CONDITION_IS_TRUE ]
+do 
+    command 1
+    command 2
+    command N
+    #command changes the condition
+done
+
+** if the condition that is checked is always true then 
+the while becomes an infinite loop
+
+** Infinite loop
+while true
+do 
+    command N
+    sleep 1
+done

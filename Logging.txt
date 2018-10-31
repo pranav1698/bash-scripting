@@ -1,0 +1,10 @@
+** Logs are the one who what when where and
+    why;
+
+* Output may sroll of the screen
+** Syslog:
+
+** Logging with logger:
+    The logger utility
+    By default creates user.notce messages
+    

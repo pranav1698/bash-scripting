@@ -1,0 +1,8 @@
+** case "$VAR" in
+        pattern_1)
+            # Comands go here
+            ;;
+        pattern_N)
+            #Commands
+            ;;
+    esac
