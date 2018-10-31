@@ -23,7 +23,7 @@
 #    echo $ANIMAL
 #done
 
-# read -p "Enter a file or a directory: " INPUT
+ read -p "Enter a file or a directory: " INPUT
 INPUTS=$@
 for INPUT in $INPUTS
 do
