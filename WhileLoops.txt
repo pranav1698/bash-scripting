@@ -15,3 +15,18 @@ do
     command N
     sleep 1
 done
+* If we want to create a process that needs to run for a specific or long time * 
+
+How to read a file, line by line:
+    ** with for loop, the file is read word by word **
+    ** hence while loop is used in conjunction with the read command ** 
+    ** On the last line of the while loop we add < <file-name-to-read> 
+    ** The read command supports the splitting of data
+
+* If we want to get out of the loop before it completes the proceedings
+    we can use the break statement
+
+* If we want to break the restart the loop before completion then we use the
+    continue statement
+
+
