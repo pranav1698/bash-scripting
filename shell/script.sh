@@ -4,9 +4,9 @@
 SERVER_NAME=$(hostname)
 MY_SHELL="Script"
 
-INDEX=1
-while [ "$CORRECT" != "y" ]
+LINE_NUM=1
+while read LINE
 do 
-    read -p "Enter your name: " NAME
-    read -p "Is $NAME correct?: " CORRECT
-done
+    echo "$LINE_NUM: $LINE"
+    ((LINE_NUM++))
+done < /etc/fstab
